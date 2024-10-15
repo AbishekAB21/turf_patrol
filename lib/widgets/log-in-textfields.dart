@@ -20,6 +20,7 @@ class ReusableTextFields extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       child: TextFormField(
         style: FontStyles.lightTextStyle(),
+        obscureText: encryptedText,
         decoration: InputDecoration(
             border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
