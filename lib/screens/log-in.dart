@@ -16,7 +16,7 @@ class LogInScreen extends StatelessWidget {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: Stack(
-        children: [
+        children:[
           // Background image
           Container(
             height: MediaQuery.of(context).size.height,
