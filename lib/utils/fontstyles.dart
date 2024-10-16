@@ -25,7 +25,7 @@ class FontStyles {
         fontFamily: "Poppins");
   }
 
-   static TextStyle BiggerlightTextStyle() {
+  static TextStyle BiggerlightTextStyle() {
     return TextStyle(
         color: Colors.white70,
         fontSize: 15.0,
@@ -47,5 +47,10 @@ class FontStyles {
         fontSize: 14.0,
         fontWeight: FontWeight.bold,
         fontFamily: "Poppins");
+  }
+
+  static TextStyle SnackBarText() {
+    return TextStyle(
+        color: Colors.white, fontSize: 14.0, fontFamily: "Poppins");
   }
 }
