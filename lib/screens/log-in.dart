@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:turf_patrol/provider/authentication-provider.dart';
 import 'package:turf_patrol/screens/sign-up.dart';
 import 'package:turf_patrol/utils/app-colors.dart';
 import 'package:turf_patrol/utils/fontstyles.dart';
@@ -13,10 +15,12 @@ class LogInScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final authProvider = Provider.of<AuthenticationProvider>(context);
+
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: Stack(
-        children:[
+        children: [
           // Background image
           Container(
             height: MediaQuery.of(context).size.height,
@@ -104,6 +108,10 @@ class LogInScreen extends StatelessWidget {
                         ),
                         ReusableButton(
                           title: "Login",
+                          ontap: () {
+                            authProvider.logIn(emailController.text.trim(),
+                                passwordController.text.trim(), context);
+                          },
                         ),
                         SizedBox(
                           height: 20,
