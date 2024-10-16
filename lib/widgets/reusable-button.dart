@@ -18,7 +18,6 @@ class ReusableButton extends StatelessWidget {
         decoration: BoxDecoration(
           color: appcolor.borderColor,
           borderRadius: BorderRadius.circular(10),
-          backgroundBlendMode: BlendMode.luminosity
         ),
         child: Center(
             child: Text(
