@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "722307145033",
+    "project_id": "turf-patrol-f3d51",
+    "storage_bucket": "turf-patrol-f3d51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722307145033:android:df18c4d1d482748377ce98",
+        "android_client_info": {
+          "package_name": "com.example.turf_patrol"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3O4iuRL8SCDh-4ALNkIeZTYWo1jb13CI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
