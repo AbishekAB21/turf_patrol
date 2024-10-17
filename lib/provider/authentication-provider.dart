@@ -21,6 +21,7 @@ class AuthenticationProvider with ChangeNotifier {
         ReusableSnackbar().showSnackbar(
           context, "Incorrect Password", appcolor.errorColor);
       }else{
+        print(e);
         ReusableSnackbar().showSnackbar(
           context, "${e.code}", appcolor.errorColor);
       }
