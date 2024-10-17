@@ -109,8 +109,8 @@ class LogInScreen extends StatelessWidget {
                         ReusableButton(
                           title: "Login",
                           ontap: () {
-                            authProvider.logIn(emailController.text.trim(),
-                                passwordController.text.trim(), context);
+                            authProvider.logIn(emailController.text,
+                                passwordController.text, context);
                           },
                         ),
                         SizedBox(

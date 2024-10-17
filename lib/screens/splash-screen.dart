@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:turf_patrol/screens/auth-page.dart';
 import 'package:turf_patrol/screens/log-in.dart';
 import 'package:turf_patrol/utils/fontstyles.dart';
 
@@ -72,6 +73,6 @@ Future<void> goHome(BuildContext context) async {
   Navigator.pushReplacement(
       context,
       MaterialPageRoute(
-        builder: (context) => LogInScreen(),
+        builder: (context) => AuthPage(),
       ));
 }
