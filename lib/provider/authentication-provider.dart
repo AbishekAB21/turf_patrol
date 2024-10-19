@@ -27,4 +27,26 @@ class AuthenticationProvider with ChangeNotifier {
       }
     }
   }
+
+   Future<void> signUp( 
+      String email, String password, BuildContext context) async {
+    try {
+      await _auth.createUserWithEmailAndPassword(email: email, password: password);
+      ReusableSnackbar().showSnackbar(
+          context, "Logged in Succesfully", appcolor.successColor);
+    } on FirebaseAuthException catch (e) {
+      print(e.code);
+      if(e.code == 'invalid-email'){
+        ReusableSnackbar().showSnackbar(
+          context, "User not found", appcolor.errorColor);
+      }else if(e.code == 'wrong-password'){
+        ReusableSnackbar().showSnackbar(
+          context, "Incorrect Password", appcolor.errorColor);
+      }else{
+        print(e);
+        ReusableSnackbar().showSnackbar(
+          context, "${e.code}", appcolor.errorColor);
+      }
+    }
+  }
 }

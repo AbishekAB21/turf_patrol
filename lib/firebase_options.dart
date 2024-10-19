@@ -25,15 +25,9 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -47,29 +41,49 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBOf26BDViqSuZd6QsMT07g1jx_wY8llk4',
-    appId: '1:722307145033:web:2fe7ad2b6c08792d77ce98',
-    messagingSenderId: '722307145033',
-    projectId: 'turf-patrol-f3d51',
-    authDomain: 'turf-patrol-f3d51.firebaseapp.com',
-    storageBucket: 'turf-patrol-f3d51.appspot.com',
-    measurementId: 'G-7BL3DB5M53',
+    apiKey: 'AIzaSyDWgkOTw5j06v8VkxKzgQ8K9d3kwle4YBY',
+    appId: '1:512605274541:web:87b2335fced8a9e958a124',
+    messagingSenderId: '512605274541',
+    projectId: 'turf-patrol2',
+    authDomain: 'turf-patrol2.firebaseapp.com',
+    storageBucket: 'turf-patrol2.appspot.com',
+    measurementId: 'G-2EZZV8NK81',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC3O4iuRL8SCDh-4ALNkIeZTYWo1jb13CI',
-    appId: '1:722307145033:android:df18c4d1d482748377ce98',
-    messagingSenderId: '722307145033',
-    projectId: 'turf-patrol-f3d51',
-    storageBucket: 'turf-patrol-f3d51.appspot.com',
+    apiKey: 'AIzaSyCr8kJ11v3GtI0fsUBgcAnBju-Q84oBM3c',
+    appId: '1:512605274541:android:edb888e5fc47e40f58a124',
+    messagingSenderId: '512605274541',
+    projectId: 'turf-patrol2',
+    storageBucket: 'turf-patrol2.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyC4xq3OOtvQRK3c0SKGCSHzJK1bXc8PziI',
-    appId: '1:722307145033:ios:c4263b8fdc74085b77ce98',
-    messagingSenderId: '722307145033',
-    projectId: 'turf-patrol-f3d51',
-    storageBucket: 'turf-patrol-f3d51.appspot.com',
+    apiKey: 'AIzaSyAp7e6I_rGKKM0TWtzlsV2YfwfgI7a6WRc',
+    appId: '1:512605274541:ios:974e8ae3f74aa94058a124',
+    messagingSenderId: '512605274541',
+    projectId: 'turf-patrol2',
+    storageBucket: 'turf-patrol2.appspot.com',
     iosBundleId: 'com.example.turfPatrol',
   );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyAp7e6I_rGKKM0TWtzlsV2YfwfgI7a6WRc',
+    appId: '1:512605274541:ios:974e8ae3f74aa94058a124',
+    messagingSenderId: '512605274541',
+    projectId: 'turf-patrol2',
+    storageBucket: 'turf-patrol2.appspot.com',
+    iosBundleId: 'com.example.turfPatrol',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyDWgkOTw5j06v8VkxKzgQ8K9d3kwle4YBY',
+    appId: '1:512605274541:web:abd81953901d2e1958a124',
+    messagingSenderId: '512605274541',
+    projectId: 'turf-patrol2',
+    authDomain: 'turf-patrol2.firebaseapp.com',
+    storageBucket: 'turf-patrol2.appspot.com',
+    measurementId: 'G-CV9ELJQTJ4',
+  );
+
 }

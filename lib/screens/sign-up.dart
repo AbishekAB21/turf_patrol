@@ -1,4 +1,7 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:turf_patrol/provider/authentication-provider.dart';
 import 'package:turf_patrol/utils/app-colors.dart';
 import 'package:turf_patrol/utils/fontstyles.dart';
 import 'package:turf_patrol/widgets/log-in-textfields.dart';
@@ -13,6 +16,7 @@ class SignUpScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final authProvider = Provider.of<AuthenticationProvider>(context);
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: Stack(
@@ -114,7 +118,9 @@ class SignUpScreen extends StatelessWidget {
                         SizedBox(
                           height: 30,
                         ),
-                        ReusableButton(title: "Sign Up",),
+                        ReusableButton(title: "Sign Up",ontap: () {
+                          authProvider.signUp(emailController.text, passwordController.text, context);
+                        },),
                         SizedBox(
                           height: 20,
                         ),
