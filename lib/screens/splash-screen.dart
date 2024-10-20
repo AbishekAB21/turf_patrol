@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:turf_patrol/screens/auth-page.dart';
-import 'package:turf_patrol/screens/log-in.dart';
 import 'package:turf_patrol/utils/fontstyles.dart';
 
 class SplashScreen extends StatefulWidget {
